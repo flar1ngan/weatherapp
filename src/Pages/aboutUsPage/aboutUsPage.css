@@ -1,0 +1,19 @@
+body {
+  overflow-x: hidden;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+@keyframes appearAbtUs {
+  0%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}

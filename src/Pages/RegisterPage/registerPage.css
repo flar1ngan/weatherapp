@@ -1,0 +1,28 @@
+.regWrapper {
+  overflow: hidden;
+}
+
+.main {
+  background-color: #e2fdff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+
+.register {
+  display: flex;
+  justify-content: center;
+}
+
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

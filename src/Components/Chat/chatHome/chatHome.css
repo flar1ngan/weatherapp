@@ -1,0 +1,94 @@
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("https://img.freepik.com/free-photo/blue-sky-watercolor-cloud-background_1409-1454.jpg?w=1380&t=st=1663969863~exp=1663970463~hmac=33612e8bf8961468fe6854b33dfc6de94ba7da921ecb920f31e328b2475bea3a"); */
+    background-image: url(../../../../public/images/mainBody-image.jpg);
+    background-size: 1920px 1080px;
+  }
+  .formContainer {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 10vh auto;
+    padding: 3rem;
+    background: #f8f8ff;
+    box-shadow: 0 8px 100px 0 #788bff;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    opacity: 1;
+    animation: rollup 1s ease-in-out;
+  }
+
+  @keyframes rollup {
+    0%{
+      width: 0px;
+      margin-bottom: 500px;
+      opacity: 0;
+    }
+    100%{
+      width: 400px;
+      margin-bottom: 10vh;
+      opacity: 1;
+    }
+  }
+
+  .formContainer h1{
+    color:#222121;
+    font-size: 3rem;
+  }
+  .input {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #222121;
+    font-size: 1.2rem;
+    background-color: white;
+    margin-top: 1rem;
+  }
+
+  .btnJoin {
+    margin-top: 2rem;
+    width: 100%;
+    background-color: #4d98e7;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8f8ff;
+
+  }
+
+  .btnJoin:hover {
+    background-color: #0778f0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+    animation: appear 2s ease ;
+  }
+
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }

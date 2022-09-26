@@ -1,0 +1,103 @@
+.mainBody {
+    background-image: url(../../../public/images/mainBody-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;  
+  }
+
+.mainBodyWrapper {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  height: 100%;
+}
+
+.mainBodyContainer {
+    max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  opacity: 0.8;
+  cursor: default ;
+} 
+
+.mainBodyText {
+    display: flex;
+    font-size: 2vw;
+    animation: appearTxt 2.5s ease-in;
+}
+
+.mainBodyHeader {
+	-webkit-animation: mainBodyHeader 1s ease-in both;
+	animation: mainBodyHeader 1s ease-in both;
+  font-size: 4vw;
+}
+
+@keyframes appearTxt {
+  0%{
+    opacity: 0;
+  }
+  33%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+ @-webkit-keyframes mainBodyHeader {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes mainBodyHeader {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px) translateY(-500px);
+            transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0) translateY(0);
+            transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
